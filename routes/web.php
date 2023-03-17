@@ -26,3 +26,7 @@ Route::get('dell', [TestController::class, 'dell']);
 Route::post('dell', [TestController::class, 'delete']);
 Route::get('edit', [TestController::class, 'edit']);
 Route::post('edit', [TestController::class, 'update']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
